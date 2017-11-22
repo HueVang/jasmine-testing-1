@@ -3,7 +3,7 @@ var {Screen} = require('./Screen');
 var {Buttons} = require('./Buttons');
 
 class Calculator extends React.Component{
-  render() {
+  render(){
     return(
       <div className="calc">
         <Screen />
