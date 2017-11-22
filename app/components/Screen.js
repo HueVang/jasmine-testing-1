@@ -4,13 +4,14 @@ var {ScreenRow} = require('./ScreenRow');
 class Screen extends React.Component{
   constructor(props){
     super(props);
-    this.state = {};
+    this.state = {
+    };
   }
   render(){
     return(
       <div className="screenStyle">
-        <ScreenRow />
-        <ScreenRow />
+        <ScreenRow display={this.props.expression}/>
+        <ScreenRow display={this.props.answer}/>
       </div>
     );
   }

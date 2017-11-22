@@ -8,7 +8,7 @@ class ScreenRow extends React.Component{
   render(){
     return(
       <div className="screenRow">
-        <span className="text">Test</span>
+        <span className="text">{this.props.display}</span>
       </div>
     );
   }
