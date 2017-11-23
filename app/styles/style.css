@@ -1,15 +1,22 @@
+body {
+  background-color: #6c8ec1;
+}
+
 .calc {
   width: 300px;
   height: 400px;
-  border: solid black 2px;
+  border: solid black 4px;
+  border-radius: 15px;
   margin: 10% auto;
+  background-color: #73757a;
 }
 
 .screenStyle {
   width: 90%;
   height: 20%;
   border: solid gray 1px;
-  background-color: lightgray;
+  border-radius: 5px;
+  background-color: #e6eaf2;
   margin: 5% auto;
 }
 
@@ -21,4 +28,21 @@
 .text {
   margin: 5% 5% 0 0;
   float: right;
+  font-family: 'Iceland';
+  font-size: 1.5em;
+}
+
+.buttonLayout {
+  height: 70%;
+  width: 100%;
+}
+
+.buttonRow button {
+  color: white;
+  background-color: #3d3f42;
+  height: 50px;
+  width: 23%;
+  margin: 2.5px 2.5px 2.5px 2.5px;
+  font-size: 1.25em;
+  cursor: pointer;
 }
