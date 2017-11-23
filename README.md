@@ -1,6 +1,6 @@
 # Jasmine Testing
 
-* *(https://hv-react-calculator.herokuapp.com/ "Calculator App on Heroku")*
+* *https://hv-react-calculator.herokuapp.com/*
 ## Author
 
 * *Hue Vang*
