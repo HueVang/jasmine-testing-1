@@ -6,7 +6,7 @@ class Buttons extends React.Component{
     this.btnData = this.btnData.bind(this);
   }
   btnData(val) {
-    this.props.btnData(val);
+    this.props.receivedData(val);
   }
   render(){
     return(
