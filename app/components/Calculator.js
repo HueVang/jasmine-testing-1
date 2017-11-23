@@ -21,6 +21,30 @@ class Calculator extends React.Component{
     var validNumbers = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9'];
     var operators = ['+', '-', '*', '/'];
 
+    if (this.state.answer != '' && operators.includes(val)) {
+      this.setState({
+        val1: this.state.answer,
+        operator: val,
+        val2: '',
+        decimal1: 0,
+        decimal2: 0,
+        expression: this.state.answer + ' ' + val,
+        answer: ''
+      });
+    }
+    // Logic for new calculation on integer input currently not working.
+    // else if (this.state.answer != '' && validNumbers.includes(val)) {
+    //   this.setState({
+    //     val1: val,
+    //     operator: '',
+    //     val2: '',
+    //     decimal1: 0,
+    //     decimal2: 0,
+    //     expression: val,
+    //     answer: ''
+    //   });
+    // }
+
     // If conditionals that checks for valid button input based on what's currently on screen
     // val1 will go in the first if condition, val2 will go in the else
     if (this.state.operator === '') {
